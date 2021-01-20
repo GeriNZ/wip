@@ -8,8 +8,16 @@ wip = [
     
     ]
 
+# def index(req):
+#     return [item for item in wip], 200
 
+# def show(req, uid):
+#     return find_by_uid(uid), 200
 
 
 def create(req):
-    new_wip = req.get_json
+    new_wip = req.get_json()
+    new_wip['id'] = sorted([c['id'] for c in cats])[-1] + 1
+    wip.append(new_wip)
+    return new_wip, 201
+
