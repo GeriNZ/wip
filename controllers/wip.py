@@ -18,9 +18,9 @@ def create(req):
     wip.append(new_wip)
     return new_wip, 201
 
-url = https://v2.jokeapi.dev/joke/Programming:
+# url = https://v2.jokeapi.dev/joke/Programming:
 
-r = request.get(url)
-r_dict = r.json()
+# r = request.get(url)
+# r_dict = r.json()
 
 
