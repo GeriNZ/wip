@@ -11,4 +11,4 @@ API (or APY as we like to call it (Python reference, get it??!) has an ID, name 
 
 ![wippy](https://github.com/GeriNZ/wip/blob/main/images/wippy.gif)
 
-![wippy](https://github.com/GeriNZ/wip/blob/main/images/wippy.gif)
+![wipplans](https://github.com/GeriNZ/wip/blob/main/images/wipplans.jpg)
