@@ -13,7 +13,7 @@ def home():
     return jsonify({'message': 'Working without errors'}), 200
 
 
-@server.route('/wip', methods=['GET,' 'POST'])
+@server.route('/api/wip', methods=['GET', 'POST'])
 def wip_handler():
     fns = {
         'GET': wip.index,
@@ -23,9 +23,10 @@ def wip_handler():
     resp, code = fns[request.method](request)
     return jsonify(resp), code
 
-@server.errorhandler(exceptions.NotFound)
-def handle_404(err):
-    return {'message': f'Nope {err}'}, 404
+# @server.errorhandler(exceptions.NotFound)
+# def handle_404(err):
+#     return {'message': f'Nope {err}'}, 404
 
 if __name__ == "__main__":
     server.run(debug=True)
+
